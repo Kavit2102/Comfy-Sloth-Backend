@@ -63,7 +63,7 @@ const port = process.env.PORT || 4000;
 const start = async () => {
   try {
     mongoose.set("strictQuery", false);
-    await connectDB(process.env.DB_URL);
+    await connectDB("mongodb+srv://kavit9433:mRhkIyCZbVn9L5Cs@cluster0.yyidhqh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
     app.listen(port, () =>
       console.log(
         `Server is listening on port ${port}... Database Connected !!!`
